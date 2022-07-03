@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
 *{
+    transition: all 0.2s;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +17,41 @@ ul{
     max-width: 1500px;
     margin: 0 auto;
 }
+/* Fonte Roboto 400 */
+#header-principal-texto, .resposta-texto, .conteudo-pergunta{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+/* Fonte Roboto 500 */
+.botao-info, .cabecalho-secao, #citacao-trabalho{
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+/* Fonte Roboto 700 */
+#header-navegacao, #notificacao, h5, .input label{
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+/* Fonte Roboto 900 */
+#nome-video, #nome-perfil, #nome-faculdade, #header-conteudo-principal h1{
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+/* Fonte Quicksand 400 */
+#aside-texto, #assunto, #conteudo{
+    font-family: 'Quicksand';
+    font-weight: 400;
+}
+/* Fonte Quicksand 500 */
+.nav-li, #select-idioma, #login-texto, #resumo-texto p, #outros-trabalhos, #footer-texto p, #editar-topico{
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+/* Fonte Quicksand 700 */
+.criarTopico, #feedback-autor p, #btnEnviar, .pergunta-titulo, .autor-pergunta, .resposta-origem{
+    font-family: 'Quicksand';
+    font-weight: 700;
+}
 /* Barra lateral de navegação */
 #menu-navegacao{
     background-color: white;
@@ -29,13 +65,9 @@ ul{
     color: white;
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
     text-align: center;
-    font-family: 'Roboto';
-    font-weight: 700;
     font-size: 30px;
 }
 .nav-li{
-    font-family: 'Quicksand';
-    font-weight: 500;
     font-size: 15px;
     line-height: 19px;
     padding: 10px 25px;
@@ -63,8 +95,6 @@ ul{
     align-items: center;
 }
 #header-principal-texto{
-    font-family: 'Roboto';
-    font-weight: 400;
     color: #725C5C;
 }
 #header-principal-texto p{
@@ -87,9 +117,7 @@ ul{
     border: none;
     background-color: #FDF1EB;
     outline: none;
-    font-family: 'Quicksand';
     font-size: 14px;
-    font-weight: 500;
     color: #333333;
 }
 #login-info{
@@ -100,9 +128,7 @@ ul{
 }
 #login-texto{
     text-align: right;
-    font-family: 'Quicksand';
     font-size: 16px;
-    font-weight: 500;
     color: #333333;
 }
 #login-imagem{
@@ -114,8 +140,6 @@ ul{
     background-color: #F85959;
     padding: 2px 6px;
     border-radius: 50%;
-    font-family: 'Roboto';
-    font-weight: 700;
     top: -5px;
     right: 0px;
     font-size: 12px;
@@ -127,7 +151,7 @@ ul{
     height: 40px;
     object-fit: cover;
 }
-#header-mobile{
+#header-mobile, #toggle, #texto-oculto{
     display: none;
 }
 #toggle-label{
@@ -139,9 +163,6 @@ ul{
 #toggle-label:hover{
     cursor: pointer;
     color: #ED7839;
-}
-#toggle{
-    display: none;
 }
 /* Secao informacao */
 #informacao{
@@ -176,16 +197,12 @@ ul{
     gap: 18px;
 }
 #nome-video{
-    font-family: 'Roboto';
-    font-weight: 900;
     font-size: 24px;
     line-height: 25px;
     letter-spacing: 0.05em;
     color: white;
 }
 #nome-perfil{
-    font-family: 'Roboto';
-    font-weight: 900;
     font-size: 34px;
     line-height: 25px;
     letter-spacing: 0.05em;
@@ -193,8 +210,6 @@ ul{
     margin-bottom: 6px;
 }
 #nome-faculdade{
-    font-family: 'Roboto';
-    font-weight: 900;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.05em;
@@ -226,8 +241,6 @@ aside::-webkit-scrollbar-thumb{
 }
 #aside-texto{
     padding: 10px;
-    font-family: 'Quicksand';
-    font-weight: 400;
     font-size: 16px;
 }
 #universidades{
@@ -247,9 +260,7 @@ aside::-webkit-scrollbar-thumb{
     justify-content: space-between;
 }
 #header-conteudo-principal h1{
-    font-family: 'Roboto';
     font-size: 25px;
-    font-weight: 900;
     color: #ED7839;
     line-height: 25px;
     letter-spacing: 0.05em;
@@ -269,8 +280,6 @@ aside::-webkit-scrollbar-thumb{
     padding: 10px 20px;
     background-color: #ED7839;
     border-radius: 4px;
-    font-family: 'Roboto';
-    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     display: flex;
@@ -278,14 +287,11 @@ aside::-webkit-scrollbar-thumb{
     gap: 5px;
 }
 #citacao-trabalho{
-    font-family: 'Roboto';
     font-size: 16px;
-    font-weight: 500;
     color: #ED7839;
     display: block;
     text-align: center;
 }
-
 /* Conteudo principal REUTILIZACAO */
 .secao{
     border: 1px solid #ECECEC;
@@ -296,28 +302,22 @@ aside::-webkit-scrollbar-thumb{
     border-bottom: 1px solid #ECECEC;
     padding: 10px;
     color: #4E4E4E;
-    font-family: 'Roboto';
-    font-weight: 500;
     font-size: 20px;
     line-height: 25px;
 }
 h5{
     color: #ED7839;
     font-size: 18px;
-    font-weight: 700;
-    font-family: 'Roboto';
     text-align: center;
     margin-top: 15px;
 }
-.criarTopico {
+.criarTopico{
     background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 4px;
     border: none;
     outline: none;
     color: white;
-    font-family: 'Quicksand';
-    font-weight: 700;
     font-size: 17px;
     padding: 10px 20px;
     position: relative;
@@ -328,7 +328,6 @@ h5{
     transition: 0.3s;
 }
 .criarTopico:hover, #btnEnviar:hover{
-    transition: 0.3s;
     cursor: pointer;
     background: linear-gradient(90deg, #FEB254 0%, #F0813D 100%);
 }
@@ -351,15 +350,10 @@ h5{
     padding: 15px;
 }
 #resumo-texto p{
-    font-family: 'Quicksand';
-    font-weight: 500;
     font-size: 15px;
     line-height: 23px;
     letter-spacing: 0.02em;
     color: #5C5C5C;
-}
-#texto-oculto{
-    display: none;
 }
 #verMais{
     font-family: 'Quicksand';
@@ -406,8 +400,6 @@ h5{
     margin-bottom: 10px;
 }
 .input label{
-    font-family: 'Roboto';
-    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #ED7839;
@@ -420,8 +412,6 @@ h5{
     padding: 20px;
     width: 100%;
     min-height: 39px;
-    font-family: 'Quicksand';
-    font-weight: 400;
     font-size: 17px;
     line-height: 18px;
 }
@@ -434,8 +424,6 @@ h5{
     padding: 10px 20px;
     width: 100%;
     min-height: 113px;
-    font-family: 'Quicksand';
-    font-weight: 400;
     font-size: 17px;
     line-height: 18px;
     font-style: normal;
@@ -474,8 +462,6 @@ h5{
     text-align: center;
     padding: 10px 100px;
     width: fit-content;
-    font-weight: 700;
-    font-family: 'Quicksand';
     font-size: 18px;
 }
 /* Conteudo principal pergunta enviada */
@@ -489,8 +475,6 @@ h5{
     display: block;
     margin: 0 auto;
     width: fit-content;
-    font-family: 'Quicksand';
-    font-weight: 500;
     font-size: 14px;
     line-height: 137.5%;
 }
@@ -514,8 +498,6 @@ h5{
     color: #707070;
 }
 #feedback-autor p{
-    font-family: 'Quicksand';
-    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: #707070;
@@ -526,8 +508,6 @@ h5{
     display: block;
     margin: 0 auto;
     width: fit-content;
-    font-family: 'Quicksand';
-    font-weight: 500;
     font-size: 14px;
     line-height: 137.5%;
 }
@@ -555,8 +535,6 @@ h5{
     margin-bottom: 10px;
 }
 .pergunta-titulo{
-    font-family: 'Quicksand';
-    font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     color: #ED7839;
@@ -570,8 +548,6 @@ h5{
     margin-top: 6px;
 }
 .conteudo-pergunta{
-    font-family: 'Quicksand';
-    font-weight: 400;
     font-size: 17px;
     line-height: 18px;
     color: #4D4D4D;
@@ -644,12 +620,8 @@ h5{
 .autor-pergunta{
     color: #5C5C5C;
     font-size: 16px;
-    font-family: 'Quicksand';
-    font-weight: 700;
 }
 .resposta-origem{
-    font-family: 'Quicksand';
-    font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     color: #ED7839;
@@ -665,8 +637,6 @@ h5{
     align-items: center;
 }
 .resposta-texto{
-    font-family: 'Quicksand';
-    font-weight: 400;
     font-size: 17px;
     line-height: 18px;
     color: #4D4D4D;
@@ -691,9 +661,7 @@ h5{
 }
 #footer-texto p{
     color: #4D4D4D;
-    font-family: 'Quicksand';
     font-size: 16px;
-    font-weight: 500;
 }
 #footer-texto > p{
     margin-bottom: 10px;
@@ -718,7 +686,7 @@ h5{
         font-size: 18px;
     }
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 980px){
     #informacao {
         margin-bottom: 30px;
         display: flex;
@@ -727,6 +695,9 @@ h5{
     }
     iframe, aside{
         width: 100%
+    }
+    #header-wrapper{
+        justify-content: flex-end;
     }
     #header-principal, #conteudo-principal, #contato{
         margin-left: 0px;

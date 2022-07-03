@@ -6,6 +6,7 @@ document.getElementById("verMais").addEventListener("click", function(){
 "use strict";
 var checkbox = document.getElementById("toggle")
 var header = document.getElementById("header-principal-texto")
+var headerWrapper = document.getElementById("header-wrapper")
 var headerIdioma = document.getElementById("idioma")
 var headerLoginInfo = document.getElementById("login-info")
 checkbox.addEventListener("change", function(){
@@ -17,18 +18,22 @@ checkbox.addEventListener("change", function(){
         header.style.display = "none"
         headerIdioma.style.display = "none"
         headerLoginInfo.style.display = "none"
+        headerWrapper.style.justifyContent = "flex-end"
     }
 })
 window.onresize = function(){
-    if(window.innerWidth >= 768){
+    if(window.innerWidth >= 980){
+        checkbox.checked = false;
         header.style.display = "block"
         headerIdioma.style.display = "flex"
         headerLoginInfo.style.display = "flex"
+        headerWrapper.style.justifyContent = "space-between"
     }
-    if(window.innerWidth <= 768){
+    if(window.innerWidth <= 980){
         header.style.display = "none"
         headerIdioma.style.display = "none"
         headerLoginInfo.style.display = "none"
+        headerWrapper.style.justifyContent = "flex-end"
     }
 }
 
